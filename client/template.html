@@ -1,1 +1,5 @@
 <h1>angular-meteor test</h1>
+<h3>Selected item: {{selectedItem.name || '[none]'}}</h3>
+<ul>
+  <li ng-repeat="item in items" ng-click="selectItem(item)">{{item.name}}</li>
+</ul>
